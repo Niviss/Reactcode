@@ -1,0 +1,52 @@
+body{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}.button{
+    height: 100px;
+    width:200px;
+    border-radius:200px;
+    background-color: rgb(216, 214, 214);
+    cursor: pointer;
+    position: relative;
+}
+.button::before{
+    position: absolute;
+    content:"";
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background:linear-gradient(yellow,gold,red);
+    margin:5px;
+    transition-duration: 0.5s;
+}
+input:checked+.button{
+    background-color:gray;
+}
+input:checked+.button::before{
+    transform: translateX(100px);
+    background:linear-gradient(white,gray,black);
+}
+input{
+    display:none;
+}
+.container{
+    background-color: rgb(255, 254, 254);
+    position:absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    transition-duration: 1s;
+}
+input:checked+label+.container{
+    background-color: black;
+    position:absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    transition-duration: 1s;
+}
+.text{
+color:white;
+}
