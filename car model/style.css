@@ -1,0 +1,75 @@
+body{
+    background-color: aliceblue;
+    height:182px;
+    border-bottom: 5px solid black;
+}
+
+.body-car{
+    border: 1px solid rgb(31, 10, 163);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 200%;
+    border-bottom-right-radius: 20px;
+    height:150px;
+    width: 300px;
+    background-color: blue;
+    display:flex;
+    animation: front 10s linear infinite;
+}
+@keyframes front{
+    to{
+        transform:translate(1200px)
+    }
+}
+.wheel1{
+    height:80px;
+    width:80px;
+    border: 1px solid rgb(28, 26, 26);
+    border-top:1px solid white;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 15px;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation:wheel1 3s linear infinite;
+}
+@keyframes wheel1{
+    to{
+        transform:rotate(360deg)
+    }
+}
+.wheel-screw1{
+    height:40px;
+    width:40px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+.wheel2{
+    height:80px;
+    width:80px;
+    border: 1px solid rgb(10, 10, 10);
+    border-top:1px solid white;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation:wheel2 3s linear infinite;
+}
+@keyframes wheel2{
+    to{
+        transform:rotate(360deg)
+    }
+}
+.wheel-screw2{
+    height:40px;
+    width:40px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
