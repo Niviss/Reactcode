@@ -1,0 +1,88 @@
+*{
+  top:0px;
+  left:0px;
+}
+.Todo{
+  width:auto;
+  height:auto;
+  background:linear-gradient(#26425A,#86A8CF,#E1CBD7,#C38EB4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container{
+  width:1300px;
+  height:500px;
+  background:linear-gradient(#E8BCB9,#F39F5A,#AE445A,#451952,#1D1A39);
+  margin:50px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex-direction:column;
+}
+form{
+  border:2px solid white;
+  border-radius: 0px 20px 20px 0px;
+}
+form input{
+height:25px;
+}
+form button{
+  background-color: #AE445A;
+  height:30px;
+  border-radius: 0px 20px 20px 0px;
+}
+.list-cont{
+  margin-top: 20px;
+  width:250px;
+  height:400px;
+  overflow-y:scroll;
+}
+.list-cont::-webkit-scrollbar-button{
+  width:100px;
+}
+.list-cont::-webkit-scrollbar{
+  background-color:transparent;
+  width:5px;
+  height:10px;
+}
+.list-cont::-webkit-scrollbar-thumb{
+  background-color: #451952;
+  height:20px;
+  width:10px;
+  border-radius: 50px;
+}
+ol{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  gap:10px;
+  overflow:hidden;
+}
+li{
+  width: auto;
+  list-style: none;
+  border-radius: 0px 50px 50px 0px;
+  display: flex;
+  border:1px solid white;
+}
+li .value-input{
+  width:100px;
+  height:25px;
+}
+.checkbox-input{
+  width:25px;
+  height:25px;
+}
+.Remove-button{
+  z-index:5;
+  border-radius: 0px 50px 50px 0px;
+  width:50px;
+  height:30px;
+  border:0px solid white;
+  background-color: rgb(202, 131, 44);
+  float:right;
+  font-size:10px;
+  font-weight:550;
+}
